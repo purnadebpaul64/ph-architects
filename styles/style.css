@@ -5,13 +5,6 @@
   box-sizing: border-box;
   font-family: "Work Sans", serif;
 }
-.container {
-  max-width: 1440px;
-  padding: 0 3vw;
-  margin: 0 auto;
-}
-
-/* ===== common style ===== */
 :root {
   --td-1: #131313;
   --td-2: #424242;
@@ -21,6 +14,25 @@
   --td-6: #e7e7e7;
   --td-7: #f3f3f3;
   --bg-c: rgba(255, 144, 14, 0.1);
+  --pri-c: #ff900e;
+}
+
+/* ===== common style ===== */
+
+.container {
+  max-width: 1440px;
+  padding: 0 3vw;
+  margin: 0 auto;
+}
+.primary-btn {
+  padding: 1vw 1.6vw;
+  background-color: var(--pri-c);
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 8px;
+  margin: 2vw 0;
 }
 
 /* ===== Navigation Section ===== */
@@ -48,4 +60,26 @@ nav {
 .logo h3 {
   font-size: 2.2rem;
   font-weight: 700;
+}
+
+/* ===== Hero Section ====== */
+.hero {
+  padding-top: 4vw;
+  padding-bottom: 2rem;
+}
+.hero h1 {
+  font-size: 3.8rem;
+  margin-bottom: 1.5vw;
+}
+.hero P {
+  line-height: 1.5rem;
+  color: var(--td-3);
+}
+.hero img {
+  width: 100%;
+}
+.hero-content {
+  text-align: center;
+  width: 60vw;
+  margin: 0 auto;
 }
